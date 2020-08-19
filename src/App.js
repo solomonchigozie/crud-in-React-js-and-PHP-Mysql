@@ -5,8 +5,10 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Edit from "./components/Edit";
 import Insert from "./components/Insert";
 import View from "./components/View";
-
 import "./App.css";
+
+
+
 function App() {
   return (
     <Router>
@@ -36,8 +38,9 @@ function App() {
       <Switch>
         <Route exact path="/Insert" component={Insert}></Route>
         <Route path="/View" component={View}></Route>
-        {/* <Route path="/Edit/:id" component={Edit}></Route> */}
+        <Route path="/Edit/:id" component={Edit}></Route>
       </Switch>
+      
     </Router>
   );
 }
